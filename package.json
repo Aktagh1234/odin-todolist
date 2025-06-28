@@ -1,0 +1,24 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "odin project todo list",
+  "homepage": "https://github.com/Aktagh1234/odin-todolist#readme",
+  "bugs": {
+    "url": "https://github.com/Aktagh1234/odin-todolist/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aktagh1234/odin-todolist.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1"
+  }
+}
