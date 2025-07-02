@@ -18,10 +18,8 @@ let clickEventsModule = (function(){
     //click event for clearing the form
     const clearForm = document.querySelector(".reset-button");
     clearButton.addEventListener("click", clearForm);
-})();
 
-//Calls createToDO
-const myTodo = createToDO("Grocery Run", "Buy groceries for the week", "2023-10-15", "High", "Low");
-const myTodo2 = createToDO("Gym", "Go to the gym in the evening", "2023-10-16", "Medium", "Low");
-console.log("Show properties of myTodo from index.js", myTodo);
-console.log("Show properties of myTodo2 from index.js", myTodo2);
+    //click event to submit a new todo
+    const submitButton = document.querySelector(".submit-button");
+    submitButton.addEventListener("click", createToDo);
+})();
