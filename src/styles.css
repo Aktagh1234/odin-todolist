@@ -1,0 +1,131 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #181a20;
+    margin: 0;
+    padding: 0;
+    color: #e0e6ed;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #f7ca18;
+    letter-spacing: 1px;
+}
+
+.todos-heading {
+    background: #23263a;
+    color: #f7ca18;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 2rem auto 1rem auto;
+    width: 80%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    border: 1px solid #2d2f3b;
+}
+
+.form {
+    background: #23263a;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.25);
+    width: 90%;
+    max-width: 500px;
+    margin: 2rem auto;
+    border: 1px solid #2d2f3b;
+}
+
+.add-todo-button {
+    background: linear-gradient(90deg, #f857a6 0%, #ff5858 100%);
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(248,87,166,0.15);
+}
+.add-todo-button:hover {
+    background: linear-gradient(90deg, #ff5858 0%, #f857a6 100%);
+    box-shadow: 0 4px 16px rgba(248,87,166,0.25);
+}
+
+#add-todo-form {
+    margin-top: 1rem;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 500;
+    color: #f7ca18;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border: 1px solid #393c4a;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background: #23263a;
+    color: #e0e6ed;
+    outline: none;
+    transition: border 0.2s;
+}
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border: 1.5px solid #f857a6;
+}
+
+button.submit-button, button.reset-button, button.add-to-checklist {
+    background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin: 0.5rem 0.5rem 0 0;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(67,206,162,0.15);
+}
+button.submit-button:hover, button.reset-button:hover, button.add-to-checklist:hover {
+    background: linear-gradient(90deg, #185a9d 0%, #43cea2 100%);
+    box-shadow: 0 4px 16px rgba(67,206,162,0.25);
+}
+
+.todo-ul {
+    list-style: disc inside;
+    margin: 0.5rem 0 1rem 0;
+    padding: 0;
+    color: #f7ca18;
+}
+
+.projects {
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 700px;
+    background: #23263a;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.25);
+    padding: 2rem;
+    min-height: 100px;
+    border: 1px solid #2d2f3b;
+}
+
+@media (max-width: 600px) {
+    .form, .projects, .todos-heading {
+        width: 98%;
+        padding: 1rem;
+    }
+    h1 {
+        font-size: 1.3rem;
+    }
+} 

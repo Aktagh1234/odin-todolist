@@ -3,7 +3,7 @@ import {clearForm} from './dom-manip';
 
 let toDoArray = [];
 
-export const createToDo = () => {
+export const createToDo = (e) => {
     let Title = document.getElementById("Title").value;
     let Description = document.getElementById("Description").value;
     let DueDate = document.getElementById("DueDate").value;
@@ -21,7 +21,7 @@ export const createToDo = () => {
         return;
     }
 
-    const nodeListCheckList = document.querySelectorAll(".form-li");
+    const nodeListCheckList = document.querySelectorAll(".todo-ul li");
     let checkListArray =[];
     for(let i = 0; i < nodeListCheckList.length; i++) {
         let strippedCheckList = nodeListCheckList[i].textContent.replace("\u00D7", '');
